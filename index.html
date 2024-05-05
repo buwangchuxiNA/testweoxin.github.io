@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add WeChat Friend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #qrCodeContainer {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        #qrCode {
+            max-width: 90%; /* 调整二维码的大小 */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* 让二维码居中显示 */
+        }
+        #textAboveQRCode {
+            position: absolute;
+            top: -30px; /* 调整文字的位置 */
+            left: 0;
+            right: 0;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="qrCodeContainer">
+        <div id="textAboveQRCode">扫二维码加好友</div>
+        <img src="IMG_3.jpg" alt="WeChat QR Code" id="qrCode">
+    </div>
+</body>
+</html>
